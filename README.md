@@ -13,9 +13,27 @@ Step-01-without-OOD/
 
 جدول گزارش تغییرات
 
-تغییرات مربوط به افزودن روش جدید پرداختتغییرات مربوط به افزودن روش جدید ارسال پیامردیفتوضیح کوتاه در مورد تغییرکلاس تغییر یافتهتوضیح کوتاه در مورد تغییرکلاس تغییر یافتهایجاد تابع payByOnsite
-برای روش پرداخت حضوری با پیغام مناسب PaymentProcessor
-کلاس دقیقا مانند نحوه ارسال ایمیل کار میکند و به جای ایمیل از SMS استفاده میکند.(ایجاد کلاس) SmsSender
-1افزودن کیس Onsite به switch paymentTipe در تابع makeReservation
-ReservationServiceافزودن کیس SMS به switch notifier در تابع makeReservation
-ReservationService2
+تغییرات مربوط به افزودن روش جدید ارسال پیام:
+
+1. (ایجاد کلاس) SmsSender ؛ دقیقا مانند نحوه ارسال ایمیل کار میکند و به جای ایمیل از SMS استفاده میکند
+
+ 
+2. در کلاس 
+ReservationService؛ 
+افزودن کیس SMS به switch notifier در تابع makeReservation
+
+
+-----------------
+
+تغییرات مربوط به افزودن روش جدید پرداخت:
+
+1. 
+در کلاس PaymentProcessor ؛ایجاد تابع payByOnsite
+برای روش پرداخت حضوری با پیغام مناسب
+
+2. در کلاس 
+ReservationService؛ افزودن کیس Onsite به switch paymentTipe در تابع makeReservation
+
+
+
+
